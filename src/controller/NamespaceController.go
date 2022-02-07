@@ -110,14 +110,6 @@ func NameSpaceDelProc(c echo.Context) error {
 	log.Println("NameSpaceDelProc : ")
 
 	paramNameSpaceID := c.Param("nameSpaceID")
-	// defaultNameSpaceID := loginInfo.DefaultNameSpaceID
-	// log.Println(paramNameSpaceID)
-	// if paramNameSpaceID == defaultNameSpaceID {
-	// 	return c.JSON(http.StatusBadRequest, map[string]interface{}{
-	// 		"error":  "Cannot delete current namespace",
-	// 		"status": 401,
-	// 	})
-	// }
 
 	respBody, respStatus := service.DelNameSpace(paramNameSpaceID)
 	fmt.Println("=============respBody =============", respBody)
