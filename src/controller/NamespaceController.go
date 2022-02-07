@@ -109,12 +109,6 @@ func NameSpaceRegProc(c echo.Context) error {
 func NameSpaceDelProc(c echo.Context) error {
 	log.Println("NameSpaceDelProc : ")
 
-	// loginInfo := service.CallLoginInfo(c)
-	// if loginInfo.UserID == "" {
-	// 	// Login 정보가 없으므로 login화면으로
-	// 	return c.Redirect(http.StatusTemporaryRedirect, "/login")
-	// }
-
 	paramNameSpaceID := c.Param("nameSpaceID")
 	// defaultNameSpaceID := loginInfo.DefaultNameSpaceID
 	// log.Println(paramNameSpaceID)
